@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:id="@+id/jdl"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:text="Menjumlahkan 2 Buah Bilangan"
+       android:textAlignment="center"
+       android:paddingTop="5dp"
+       android:textSize="20dp"
+       android:textColor="#000"/>
+    <TextView
+        android:id="@+id/bil1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/jdl"
+        android:paddingTop="8dp"
+        android:text="Masukan bilangan pertama"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/txtBil1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bil1"/>
+
+    <TextView
+        android:id="@+id/bil2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtBil1"
+        android:paddingTop="8dp"
+        android:text="Masukan bilangan kedua"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/txtBil2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bil2"/>
+    <Button
+        android:id="@+id/btnCekBil"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtBil2"
+        android:layout_centerHorizontal="true"
+        android:text="HITUNG BILANGAN"/>
+
+    <TextView
+        android:id="@+id/hasilhitung"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btnCekBil"
+        android:paddingTop="8dp"
+        android:text="Hasil Penjumlahan"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="#000"/>
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/hasilhitung"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
